@@ -1,0 +1,89 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+<body>
+  <style>
+    .bg-main {
+      background-image: url("https://cdn.shopify.com/s/files/1/0884/2618/5027/files/1.png?v=1728756523");
+    }
+
+    .bg-promo {
+      background-image: url("https://cdn.shopify.com/s/files/1/0884/2618/5027/files/promo-code-background.png?v=1731372788");
+    }
+
+    @media (max-width: 768px) {
+      .bg-promo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 6em;
+      }
+      .bg-text {
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        width: 55%;
+        flex-direction: column;
+      }
+      #sec-maintext {
+        font-size: 1.3em;
+      }
+      #sec-subtext {
+        font-size: 0.8em;
+      }
+      #main-second-div {
+        margin-top: -0.5em;
+      }
+      #main-first {
+        font-size: 1.4em;
+        line-height: normal;
+      }
+    }
+  </style>
+  <div
+    class="relative flex flex-col bg-main bg-cover bg-center text-left md:text-center px-4 py-10 md:py-20 text-white gap-0 md:gap-7"
+  >
+    <div class="bg-black opacity-60 absolute inset-0"></div>
+    <!-- MAIN DIV -->
+
+    <div class="relative">
+      <!-- FIRST -->
+      <h1 id="main-first" class="md:text-5xl font-bold md:font-extrabold">
+        Shop our BFCM Core Collections
+      </h1>
+    </div>
+
+    <div
+      id="main-second-div"
+      class="relative flex flex-row md:flex-col gap-2 md:gap-6"
+    >
+      <!-- SECOND -->
+      <div class="bg-text relative w-3/4 md:w-auto">
+        <!-- text -->
+        <h1
+          id="sec-maintext"
+          class="text-xl md:text-6xl font-extrabold md:font-extrabold"
+        >
+          ENJOY 25% OFF
+        </h1>
+        <p id="sec-subtext" class="text-xs md:text-4xl md:mb-3">
+          + Exclusive next day delivery
+        </p>
+      </div>
+
+      <div
+        class="bg-promo bg-contain bg-no-repeat relative bg-center text-black py-0 md:py-12 text-center mt-0 h-40"
+      >
+        <!-- promo -->
+        <div class="-mt-4 md:-mt-7 w-auto">
+          <!-- promo code wrapper -->
+          <p class="text-sm md:text-xl">Use code:</p>
+          <h1 class="text-xl md:text-5xl font-extrabold -mt-1">GPBF25</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
